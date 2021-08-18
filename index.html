@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GUFF</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--Stylesheet-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--JS for bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!--Remixicon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+                
+            <!--Brand-->
+            <a class="navbar-brand" href="#">
+                <img src="art/guff_logo_grey.png" alt="" width="176" height="50">
+            </a>
+
+            <!--Hamburger-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Part of hamburger-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collections</a>
+                    </li>
+                    
+                    <!--Download-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Download
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Android</a></li>
+                            <li><a class="dropdown-item" href="#">iOS</a></li>
+                        </ul>
+
+                    </li>
+                    
+                </ul>
+
+                <!--Sign up-->
+                <form class="ms-auto">
+                    <button class="btn btn-outline-success" type="button">Sign up</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Log in</button>
+                </form>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Banner section-->
+    <div class="container-fluid bg-light-grey">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center text_box_homepage flex-column">
+                    <h1 class="big_title heading_space">
+                        Get Up. Fit faster.
+                        <!-- <div class="d-flex justify-content-center">
+                            <img src="art/guff_logo_yellow.png" width="176" height="auto">
+                        </div> -->
+                    </h1>
+
+                    <!--Download-->
+                    <div class="d-flex flex-row justify-content-around m-3">
+                        <!-- <button class="cool_buttons first">Challenges 💪</button>
+                        <button class="cool_buttons fourth shadow-lg bg-light-grey">Collections 🏆</button> -->
+                        <button class="cool_buttons third shadow-lg"><i class="ri-android-line"></i> Android</button>
+                        <button class="cool_buttons fourth shadow-lg bg-light-grey"><i class="ri-apple-fill"></i> iOS</button>
+                    </div>
+
+                    <div class="p-3"></div>
+                    <h2 class="h2 h2_space">Making workouts accessible.</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!--Image-->
+                <div class="d-flex justify-content-start">
+                    <img src="images/app_mockup_signup.png" alt="mockup" id="mockup_image">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Challenges and Collections card-->
+    <div id="cards_section" class="row">
+        <!--Challenges column-->
+        <!--Challenges card-->
+        <div class="card" style="width: 35vw;">
+            <!--Carousel-->
+            <div id="carouselExampleControls" class="carousel slide card-img-top" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/male_female_cycling.jpg" class="d-block img-fluid" alt="Male and female cycling">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/basketball_net.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bowling.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+                <!--Carousel end-->
+                <div class="card-body">
+                    <h5 class="card-title">Challenges</h5>
+                    <p class="card-text">Browse the community's favourite <strong>challenges</strong></p>
+                    <!--Challenges Button-->
+                    <a href="#" class="btn btn-warning">Challenges</a>
+                </div>
+        </div>
+
+        <!--Collections column-->
+        <!--Challenges card-->
+        <div class="card" style="width: 35vw;">
+            <!--Carousel-->
+            <div id="carouselExampleControls" class="carousel slide card-img-top" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/basketball_net.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bowling.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/male_female_cycling.jpg" class="d-block w-100" alt="Male and female cycling">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--Carousel end-->
+            <div class="card-body">
+                <h5 class="card-title">Collections</h5>
+                <p class="card-text">Browse the community's favourite <strong>collections</strong></p>
+                <!--Collections button-->
+                <a href="#" class="btn btn-primary">Collections</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Brief description section-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 description">
+                <h2>Mash records.</h2>
+                <h3>Not Guiness World Records, but curated challenges that are catered for you.</h3>
+            </div>
+            <div class="col-md-4 description">
+                <h2>Meet friends.</h2>
+                <h3>Tackle collections of challenges together.</h3>
+            </div>
+            <div class="col-md-4 description">
+                <h2>Make history.</h2>
+                <h3>Show the world what you're made of.</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
