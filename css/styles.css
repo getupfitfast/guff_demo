@@ -132,5 +132,13 @@ body {
 }
 
 /* Description */
+.description {
+    font-size: 1rem;
+    margin: 3%;
+}
 
+.description_headings {
+    margin-bottom: 7%;
+    font-weight: 700;
+}
 
