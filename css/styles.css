@@ -15,10 +15,11 @@ body {
     font-family: "jost", sans-serif;
     font-weight: 700;
     font-size: 4.5rem;
+    text-align: center;
 }
 
 .heading_space {
-    margin-top: 10%;
+    margin-top: 3%;
     padding: 4%;
 }
 
@@ -35,9 +36,12 @@ body {
 #mockup_image {
     margin-left: 15%;
     padding-right: 2%;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-bottom: 5%;
     transform: rotate(10deg);
+    /* position: relative;
+    top: 60px;
+    z-index: 0; */
 }
 
 /* Challenge and Collection grid */
@@ -65,6 +69,9 @@ body {
 #cards_section {
     background-color: #f8ef2c;
 }
+
+
+
 
 /* Homepage buttons (https://codepen.io/derekmorash/pen/XddZJY) */
 
@@ -142,3 +149,13 @@ body {
     font-weight: 700;
 }
 
+/* Homepage icons */
+.banner_icons {
+    color: orangered;
+}
+
+/* Challenge page */
+.challenge_box {
+    border: inset;
+
+}
