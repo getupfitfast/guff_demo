@@ -159,3 +159,56 @@ body {
     border: inset;
 
 }
+
+/* Try now section */
+.bg_orangered {
+    background-color: #ffffff;
+}
+
+.try_text {
+    padding: 3%;
+}
+
+.try_buttons {
+    border: hidden;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, turquoise 50%, transparent 20%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+.try_buttons:hover {
+    background-position: 0;
+    color: #000;
+}
+
+.try_buttons_orange {
+    border: hidden;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, #f09813 50%, transparent 20%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+.try_buttons_orange:hover {
+    background-position: 0;
+    color: #000;
+}
+
+.try_now_text {
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+}
+
+.white_box {
+    margin-top: 70px;
+    border-bottom: inset;
+}
+
+/* Footer */
+.bg_grey {
+    background-color: #383838;
+    height: 200px;
+}
